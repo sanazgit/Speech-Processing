@@ -1,1 +1,30 @@
+# Noise-Robust ASR with Whisper and Wav2Vec2
+
+This project demonstrates a practical and modular pipeline for **automatic speech recognition (ASR)** in real-world, noisy conditions.  
+It compares the performance of two leading ASR models — **OpenAI Whisper** and **Facebook Wav2Vec2** — under both raw and denoised audio inputs.
+
+---
+
+## Features
+
+- Denoising raw audio using `noisereduce`
+- Visualization of audio features: Spectrogram and MFCC
+-  Speech-to-text transcription using:
+  - OpenAI Whisper
+  - Facebook Wav2Vec2 (via HuggingFace)
+-  Performance evaluation using **Word Error Rate (WER)**
+
+---
+
+## Project Structure
+
+```bash
+.
+├── denoised.wav                # Denoised version of input audio
+├── audio/                      # Original audio file(s)
+├── whisper_output.txt          # Whisper transcription results
+├── wav2vec2_output.txt         # Wav2Vec2 transcription results
+├── ASR_notebook.ipynb          # Complete interactive pipeline (Colab/Jupyter)
+└── README.md                   # Project documentation
+
 
